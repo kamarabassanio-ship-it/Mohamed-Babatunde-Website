@@ -1,0 +1,908 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Mohamed Babatunde - Creative Developer and Designer Portfolio" />
+    <meta
+      name="keywords"
+      content="Mohamed, Portfolio, Web Developer, Software Engineering, UI UX, Sierra Leone" />
+    <meta name="author" content="Mohamed Babatunde" />
+
+    <title>Mohamed Babatunde | Developer & Designer</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      .icon-svg {
+        width: 1.5rem;
+        height: 1.5rem;
+        fill: currentColor;
+      }
+      .icon-svg-lg {
+        width: 2rem;
+        height: 2rem;
+        fill: currentColor;
+      }
+    </style>
+  </head>
+
+  <body class="bg-slate-50 text-slate-800 antialiased">
+    <!-- NAVIGATION BAR -->
+    <header
+      class="fixed top-0 left-0 z-50 w-full bg-black/30 backdrop-blur-md shadow-sm">
+      <div
+        class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
+        <!-- Logo -->
+        <a
+          href="#home"
+          class="rounded-full bg-blue-400 px-5 py-2.5 font-bold transition hover:bg-blue-700 tracking-tight">
+          <span class="text-white">B.T - </span>
+          <span class="text-white">Portfolio</span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden items-center gap-8 md:flex">
+          <a
+            href="#home"
+            class="font-medium text-white transition hover:text-blue-300"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="font-medium text-white transition hover:text-blue-300"
+            >About</a
+          >
+          <a
+            href="#skills"
+            class="font-medium text-white transition hover:text-blue-300"
+            >Skills</a
+          >
+          <a
+            href="#portfolio"
+            class="font-medium text-white transition hover:text-blue-300"
+            >Portfolio</a
+          >
+          <a
+            href="#gallery"
+            class="font-medium text-white transition hover:text-blue-300"
+            >Gallery</a
+          >
+          <a
+            href="#contact"
+            class="rounded-full bg-blue-400 px-5 py-2.5 font-semibold text-white transition hover:bg-blue-700"
+            >Contact</a
+          >
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="menuButton"
+          type="button"
+          class="flex items-center justify-center rounded-lg size-10 bg-white/20 hover:bg-white/30 md:hidden cursor-pointer p-2 text-white"
+          aria-label="Open navigation menu">
+          <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <nav
+        id="mobileMenu"
+        class="hidden border-t border-slate-700/50 bg-slate-900/95 px-6 pb-5 md:hidden text-white">
+        <div class="flex flex-col gap-3 pt-4">
+          <a
+            href="#home"
+            class="font-medium border-b border-slate-700/50 py-2 hover:text-blue-400"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="font-medium border-b border-slate-700/50 py-2 hover:text-blue-400"
+            >About</a
+          >
+          <a
+            href="#skills"
+            class="font-medium border-b border-slate-700/50 py-2 hover:text-blue-400"
+            >Skills</a
+          >
+          <a
+            href="#portfolio"
+            class="font-medium border-b border-slate-700/50 py-2 hover:text-blue-400"
+            >Portfolio</a
+          >
+          <a
+            href="#gallery"
+            class="font-medium border-b border-slate-700/50 py-2 hover:text-blue-400"
+            >Gallery</a
+          >
+          <a
+            href="#contact"
+            class="font-medium border-b border-slate-700/50 py-2 hover:text-blue-400"
+            >Contact</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section
+        id="home"
+        class="relative bg-gradient-to-r from-blue-50 to-blue-200 pb-20 pt-36"
+        style="
+          background-image:
+            linear-gradient(rgba(12, 12, 12, 0.75), rgba(52, 51, 51, 0.75)),
+            url(&quot;./images/likok campus.jpg&quot;);
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        ">
+        <div
+          class="mx-auto grid max-w-7xl items-center gap-12 px-6 lg:grid-cols-2 lg:px-8">
+          <!-- Hero Text -->
+          <div class="pb-6 text-center lg:pb-0 lg:text-left">
+            <p
+              class="mb-4 inline-flex rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-700">
+              Welcome to my portfolio
+            </p>
+
+            <h1
+              class="text-1xl leading-tight sm:text-6xl lg:text-7xl text-white tracking-wider">
+              I'M Mohamed<span class="text-cyan-200"> Babatunde </span>
+            </h1>
+
+            <h2 class="mt-4 text-xl font-bold sm:text-3xl text-white">
+              Creative Developer & Designer
+            </h2>
+
+            <p
+              class="mx-auto mt-6 max-w-xl text-base sm:text-lg font-sans font-semibold leading-relaxed text-slate-200 lg:mx-0">
+              I create modern, responsive and user-friendly digital experiences
+              by combining software development, technology and creative design.
+            </p>
+
+            <!-- Hero Buttons -->
+            <div
+              class="mt-10 flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+              <a
+                href="#portfolio"
+                class="inline-flex items-center justify-center gap-3 w-full sm:w-auto rounded-lg bg-blue-600 px-7 py-3 font-semibold text-white shadow-lg transition duration-300 hover:bg-blue-700">
+                <svg class="size-6 fill-current" viewBox="0 0 24 24">
+                  <path
+                    d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z" />
+                </svg>
+                <span>Explore My Work</span>
+              </a>
+
+              <a
+                href="#contact"
+                class="inline-flex items-center justify-center gap-3 w-full sm:w-auto rounded-lg border-2 border-slate-300 bg-white px-7 py-3 font-semibold text-slate-700 transition duration-300 hover:border-blue-600 hover:text-blue-600">
+                <svg class="size-6 fill-current" viewBox="0 0 24 24">
+                  <path
+                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                </svg>
+                <span>Contact Me</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Profile Image -->
+          <div
+            class="absolute left-1/2 -bottom-1 -translate-x-2/2 lg:left-auto lg:right-10 lg:translate-x-0">
+            <div class="relative">
+              <!-- Decorative Circle -->
+              <div
+                class="absolute -inset-4 rounded-full bg-blue-200/100 blur-2xl"></div>
+
+              <div
+                class="relative overflow-hidden rounded-t-4xl border-x-8 border-t-8 border-b-8 border-white bg-slate-600 shadow-2xl">
+                <img
+                  src="./images/B.Zee.jpg"
+                  alt="Portrait of Mohamed Babatunde"
+                  class="block h-80 w-80 object-cover sm:h-600 sm:w-600 lg:h-[20rem] lg:w-[20rem]" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section id="about" class="bg-white py-20">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mx-auto mb-12 max-w-2xl text-center">
+            <span class="font-semibold uppercase tracking-wider text-blue-600"
+              >About Me</span
+            >
+
+            <h2 class="mt-2 text-3xl font-extrabold text-slate-900 sm:text-4xl">
+              Turning Ideas Into Digital Experiences
+            </h2>
+
+            <div class="mx-auto mt-4 h-1 w-16 rounded-full bg-blue-600"></div>
+          </div>
+
+          <div
+            class="flex flex-col items-center gap-12 lg:grid lg:grid-cols-2 relative overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-xl p-6 sm:p-10 lg:p-12">
+            <!-- About Image -->
+            <div class="flex justify-center w-full">
+              <img
+                src="./images/BT bg remove.png"
+                alt="Mohamed Babatunde"
+                class="rounded-2xl object-cover shadow-lg max-h-96 w-auto bg-blue-200" />
+            </div>
+
+            <!-- About Content -->
+            <div class="w-full">
+              <h3 class="text-2xl font-bold text-slate-900">
+                Creative Developer & Designer
+              </h3>
+              <p class="mt-5 leading-relaxed text-slate-700">
+                I'm Babatunde, a creative developer and designer passionate
+                about crafting visually appealing, responsive and interactive
+                web experiences.
+              </p>
+
+              <p class="mt-4 leading-relaxed text-slate-700">
+                I enjoy combining technology and creativity to develop
+                meaningful digital products that solve real-world problems and
+                provide a positive user experience.
+              </p>
+
+              <!-- Quick Information -->
+              <div class="mt-8 grid gap-4 sm:grid-cols-2">
+                <div
+                  class="rounded-xl bg-white p-4 border border-slate-200 shadow-sm">
+                  <p
+                    class="text-xs font-bold text-blue-600 uppercase tracking-wider">
+                    LOCATION
+                  </p>
+                  <p class="mt-1 font-semibold text-slate-900">
+                    Freetown, Sierra Leone
+                  </p>
+                </div>
+
+                <div
+                  class="rounded-xl bg-white p-4 border border-slate-200 shadow-sm">
+                  <p
+                    class="text-xs font-bold text-blue-600 uppercase tracking-wider">
+                    PROFESSION
+                  </p>
+                  <p class="mt-1 font-semibold text-slate-900">
+                    Developer & Designer
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS SECTION -->
+      <section id="skills" class="bg-slate-100 py-20">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mx-auto mb-12 max-w-2xl text-center">
+            <span class="font-semibold uppercase tracking-wider text-blue-800"
+              >My Skills</span
+            >
+
+            <h2 class="mt-2 text-3xl font-extrabold text-slate-900 sm:text-4xl">
+              Technologies & Expertise
+            </h2>
+            <p class="mt-4 text-slate-600">
+              Some of the technologies and creative skills I use when developing
+              digital solutions.
+            </p>
+          </div>
+
+          <div class="grid gap-8 md:grid-cols-3">
+            <!-- Python -->
+            <article
+              class="rounded-2xl bg-white p-8 text-center shadow-md transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+              <div
+                class="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-2xl bg-blue-50">
+                <img
+                  src="./images/python icon.jpg"
+                  alt="Python logo"
+                  class="h-14 w-14 object-contain rounded-lg" />
+              </div>
+
+              <h3 class="text-xl font-bold text-slate-900">Python</h3>
+              <p class="mt-3 leading-relaxed text-slate-600">
+                Data analysis, automation, programming and software development
+                using Python.
+              </p>
+            </article>
+
+            <!-- JavaScript -->
+            <article
+              class="rounded-2xl bg-white p-8 text-center shadow-md transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+              <div
+                class="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-2xl bg-yellow-50">
+                <img
+                  src="./images/java icon.jpg"
+                  alt="JavaScript logo"
+                  class="h-14 w-14 object-contain rounded-lg" />
+              </div>
+
+              <h3 class="text-xl font-bold text-slate-900">JavaScript</h3>
+              <p class="mt-3 leading-relaxed text-slate-600">
+                Building interactive and dynamic websites with modern JavaScript
+                techniques.
+              </p>
+            </article>
+
+            <!-- UI/UX -->
+            <article
+              class="rounded-2xl bg-white p-8 text-center shadow-md transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+              <div
+                class="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-2xl bg-purple-50">
+                <svg class="icon-svg-lg text-purple-600" viewBox="0 0 24 24">
+                  <path
+                    d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900">UI/UX Design</h3>
+              <p class="mt-3 leading-relaxed text-slate-600">
+                Designing intuitive interfaces and user-friendly experiences for
+                digital products.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PORTFOLIO SECTION -->
+      <section id="portfolio" class="bg-white py-20">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mx-auto mb-12 max-w-2xl text-center">
+            <span class="font-semibold uppercase tracking-wider text-blue-600"
+              >Portfolio</span
+            >
+            <h2 class="mt-2 text-3xl font-extrabold text-slate-900 sm:text-4xl">
+              Featured Projects
+            </h2>
+          </div>
+
+          <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            <!-- Project 1 -->
+            <article
+              class="group flex flex-col overflow-hidden rounded-2xl bg-slate-50 shadow-md transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+              <div class="overflow-hidden h-48">
+                <img
+                  src="./images/database img.jpg"
+                  alt="Project 1"
+                  class="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+              </div>
+
+              <div class="p-6 flex-1 flex flex-col">
+                <span
+                  class="text-xs font-bold text-blue-600 uppercase tracking-wider"
+                  >Database Admin</span
+                >
+
+                <h3 class="mt-2 text-xl font-bold text-slate-900">
+                  Project One
+                </h3>
+                <p class="mt-3 text-sm leading-relaxed text-slate-600 flex-1">
+                  Explore Data Analytics, Cloud Storage, Process Management,
+                  Administration, and Data Security.
+                </p>
+              </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article
+              class="group flex flex-col overflow-hidden rounded-2xl bg-slate-50 shadow-md transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+              <div class="overflow-hidden h-48">
+                <img
+                  src="./images/gallery 03.png"
+                  alt="Project 2"
+                  class="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+              </div>
+
+              <div class="p-6 flex-1 flex flex-col">
+                <span
+                  class="text-xs font-bold text-blue-600 uppercase tracking-wider"
+                  >Software</span
+                >
+                <h3 class="mt-2 text-xl font-bold text-slate-900">
+                  Project Two
+                </h3>
+                <p class="mt-3 text-sm leading-relaxed text-slate-600 flex-1">
+                  A software solution developed to address practical user needs
+                </p>
+              </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article
+              class="group flex flex-col overflow-hidden rounded-2xl bg-slate-50 shadow-md transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+              <div class="overflow-hidden h-48">
+                <img
+                  src="./images/uxui design 03.jpg"
+                  alt="Project 3"
+                  class="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+              </div>
+
+              <div class="p-6 flex-1 flex flex-col">
+                <span
+                  class="text-xs font-bold text-blue-600 uppercase tracking-wider"
+                  >UI/UX Design</span
+                >
+                <h3 class="mt-2 text-xl font-bold text-slate-900">
+                  Project Three
+                </h3>
+                <p class="mt-3 text-sm leading-relaxed text-slate-600 flex-1">
+                  A user-interface design focused on usability, accessibility
+                  and visual appeal.
+                </p>
+              </div>
+            </article>
+
+            <!-- Project 4 -->
+            <article
+              class="group flex flex-col overflow-hidden rounded-2xl bg-slate-50 shadow-md transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+              <div class="overflow-hidden h-48">
+                <img
+                  src="./images/BT Coding.png"
+                  alt="Project 4"
+                  class="h-80 w-full object-cover transition duration-500 group-hover:scale-105" />
+              </div>
+
+              <div class="p-6 flex-1 flex flex-col">
+                <span
+                  class="text-xs font-bold text-blue-600 uppercase tracking-wider"
+                  >Creative Project</span
+                >
+
+                <h3 class="mt-2 text-xl font-bold text-slate-900">
+                  Project Four
+                </h3>
+                <p class="mt-3 text-sm leading-relaxed text-slate-600 flex-1">
+                  A creative project showcasing development and design
+                  capabilities.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALLERY SECTION -->
+      <section id="gallery" class="bg-slate-100 py-20">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mx-auto mb-12 max-w-2xl text-center">
+            <span class="font-semibold uppercase tracking-wider text-blue-600"
+              >Gallery</span
+            >
+            <h2 class="mt-2 text-3xl font-extrabold text-slate-900 sm:text-4xl">
+              My Creative Gallery
+            </h2>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <img
+              src="./images/gallery 01.png"
+              alt="Gallery image 1"
+              class="h-64 w-full rounded-2xl object-cover shadow-md transition duration-300 hover:-translate-y-1 hover:shadow-xl" />
+            <img
+              src="./images/gallery 02.png"
+              alt="Gallery image 2"
+              class="h-64 w-full rounded-2xl object-cover shadow-md transition duration-300 hover:-translate-y-1 hover:shadow-xl" />
+            <img
+              src="./images/gallery 03.png"
+              alt="Gallery image 3"
+              class="h-64 w-full rounded-2xl object-cover shadow-md transition duration-300 hover:-translate-y-1 hover:shadow-xl" />
+            <img
+              src="./images/gallery 04.png"
+              alt="Gallery image 4"
+              class="h-64 w-full rounded-2xl object-cover shadow-md transition duration-300 hover:-translate-y-1 hover:shadow-xl" />
+            <img
+              src="./images/gallery 005.png"
+              alt="Gallery image 5"
+              class="h-64 w-full rounded-2xl object-cover shadow-md transition duration-300 hover:-translate-y-1 hover:shadow-xl" />
+            <img
+              src="./images/gallery 006.png"
+              alt="Gallery image 6"
+              class="h-64 w-full rounded-2xl object-cover shadow-md transition duration-300 hover:-translate-y-1 hover:shadow-xl" />
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact" class="bg-white py-20">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mx-auto mb-12 max-w-2xl text-center">
+            <span class="font-semibold uppercase tracking-wider text-blue-800"
+              >Contact</span
+            >
+            <h2 class="mt-2 text-3xl font-extrabold text-slate-900 sm:text-4xl">
+              Let's Work Together
+            </h2>
+            <p class="mt-4 text-slate-600">
+              Have a project or idea? Send me a message and let's discuss it.
+            </p>
+          </div>
+
+          <div
+            class="grid overflow-hidden rounded-3xl bg-slate-50 shadow-xl lg:grid-cols-2 border border-slate-200">
+            <!-- Contact Form -->
+            <div class="p-8 sm:p-10 flex flex-col gap-4">
+              <h3 class="text-2xl font-bold text-slate-900">
+                Send Me a Message
+              </h3>
+              <p class="text-slate-600">
+                Fill out the form below and I'll get back to you.
+              </p>
+
+              <form
+                action="https://formspree.io/f/xkjgevky"
+                method="post"
+                class="mt-6 flex flex-col gap-6">
+                <!-- Name -->
+                <div>
+                  <label
+                    for="name"
+                    class="mb-2 block text-sm font-semibold text-slate-700"
+                    >Full Name</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your full name"
+                    required
+                    class="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 outline-none transition focus:border-blue-600" />
+                </div>
+
+                <!-- Email -->
+                <div>
+                  <label
+                    for="email"
+                    class="mb-2 block text-sm font-semibold text-slate-700"
+                    >Email Address</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="your@email.com"
+                    required
+                    class="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 outline-none transition focus:border-blue-600" />
+                </div>
+
+                <!-- Subject -->
+                <div>
+                  <label
+                    for="subject"
+                    class="mb-2 block text-sm font-semibold text-slate-700">
+                    Subject</label
+                  >
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="Subject of your message"
+                    class="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 outline-none transition focus:border-blue-600" />
+                </div>
+
+                <!-- Message -->
+                <div>
+                  <label
+                    for="message"
+                    class="mb-2 block text-sm font-semibold text-slate-700"
+                    >Message</label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Write your message here..."
+                    required
+                    class="w-full h-40 resize-none rounded-lg border border-slate-300 bg-white px-4 py-3 outline-none transition focus:border-blue-600"></textarea>
+                </div>
+
+                <!-- Submit -->
+                <button
+                  type="submit"
+                  class="inline-flex w-full items-center justify-center rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white shadow-md transition duration-300 hover:bg-blue-700 hover:shadow-lg cursor-pointer">
+                  <svg class="size-6 mr-2 fill-current" viewBox="0 0 24 24">
+                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+                  </svg>
+                  Send Message
+                </button>
+              </form>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="flex flex-col bg-slate-800 text-white justify-between">
+              <div class="p-8 sm:p-10">
+                <h3 class="text-2xl font-bold">Contact Information</h3>
+                <p class="mt-3 leading-relaxed text-slate-300">
+                  You can also reach me directly through the contact details
+                  below.
+                </p>
+
+                <!-- Contact Items -->
+                <div class="mt-8 space-y-6">
+                  <div class="flex gap-4 items-start">
+                    <div
+                      class="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-blue-600">
+                      <svg class="icon-svg" viewBox="0 0 24 24">
+                        <path
+                          d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                      </svg>
+                    </div>
+
+                    <div>
+                      <h4 class="font-semibold">Address</h4>
+                      <p class="mt-1 text-sm leading-relaxed text-slate-300">
+                        Limkokwing University of Creative Technology, Freetown -
+                        Western Urban Sierra Leone
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="flex gap-4 items-start">
+                    <div
+                      class="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-blue-600">
+                      <svg class="icon-svg" viewBox="0 0 24 24">
+                        <path
+                          d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                      </svg>
+                    </div>
+
+                    <div>
+                      <h4 class="font-semibold">Phone</h4>
+                      <p class="mt-1 text-sm text-slate-300">+23278588554</p>
+                    </div>
+                  </div>
+
+                  <div class="flex gap-4 items-start">
+                    <div
+                      class="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-blue-600">
+                      <svg class="icon-svg" viewBox="0 0 24 24">
+                        <path
+                          d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                      </svg>
+                    </div>
+
+                    <div>
+                      <h4 class="font-semibold">Email</h4>
+                      <p class="mt-1 break-all text-sm text-slate-300">
+                        kamarabassanio@gmail.com
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="flex gap-4 items-start">
+                    <div
+                      class="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-blue-600">
+                      <svg class="icon-svg" viewBox="0 0 24 24">
+                        <path
+                          d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
+                      </svg>
+                    </div>
+
+                    <div>
+                      <h4 class="font-semibold">Office Hours</h4>
+                      <p class="mt-1 text-sm text-slate-300">
+                        Monday - Friday, 8:00 AM - 4:00 PM
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Location Image -->
+              <div class="overflow-hidden h-120 w-full pb-10">
+                <img
+                  src="./images/B.T Portfolio.jpg"
+                  alt="Limkokwing Campus"
+                  class="h-010 w-full object-cover " />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- LOCATION SECTION -->
+      <section class="bg-slate-100 py-16">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="grid items-center gap-10 lg:grid-cols-2">
+            <div>
+              <span class="font-semibold uppercase tracking-wider text-blue-600"
+                >Location</span
+              >
+
+              <h2
+                class="mt-2 text-3xl font-extrabold text-slate-900 sm:text-4xl">
+                Find Me in Limkokwing
+              </h2>
+              <p class="mt-5 leading-relaxed text-slate-600">
+                I am located in the Limkokwing University community in Freetown,
+                Sierra Leone. The location is easily accessible from the main
+                highway.
+              </p>
+
+              <div class="mt-6 flex items-start gap-4">
+                <div
+                  class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-blue-600 text-white">
+                  <svg class="icon-svg" viewBox="0 0 24 24">
+                    <path
+                      d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                  </svg>
+                </div>
+
+                <div>
+                  <h3 class="font-bold text-slate-900">
+                    Limkokwing University
+                  </h3>
+                  <p class="mt-1 text-slate-600">
+                    53 Hill Station - Regent Road, Western Urban, Freetown,
+                    Sierra Leone
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Map Placeholder -->
+            <div
+              class="overflow-hidden rounded-3xl shadow-2xl bg-slate-800 text-white flex flex-col justify-between">
+              <style>
+                .map-placeholder {
+                  background-image: url("./images/likok campus.jpg");
+                  background-size: cover;
+                  background-position: center;
+                  background-repeat: no-repeat;
+                }
+              </style>
+
+              <!-- Content Area -->
+              <div class="p-8 text-center">
+                <h3 class="text-2xl font-bold">My Location</h3>
+                <p class="mt-3 text-slate-300">
+                  Limkokwing University, Hill Station, Freetown, Sierra Leone
+                </p>
+              </div>
+
+              <!-- Image -->
+              <div class="map-placeholder h-64 w-full"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SOCIAL / CONNECT SECTION -->
+      <section class="bg-slate-900 py-16">
+        <div class="mx-auto max-w-4xl px-6 text-center">
+          <div
+            class="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-600 text-white">
+            <svg class="icon-svg-lg" viewBox="0 0 24 24">
+              <path
+                d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z" />
+            </svg>
+          </div>
+
+          <h2 class="mt-6 text-3xl font-extrabold text-white sm:text-4xl">
+            Connect With Me
+          </h2>
+          <p class="mx-auto mt-4 max-w-2xl leading-relaxed text-slate-300">
+            Follow me on social media for updates, projects, events and creative
+            work.
+          </p>
+
+          <!-- Standard Social Media Buttons -->
+          <div class="mt-8 flex flex-wrap justify-center gap-4">
+            <!-- Facebook -->
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              class="flex h-12 w-12 items-center justify-center rounded-full bg-slate-800 text-white transition duration-300 hover:bg-[#1877F2] hover:scale-110">
+              <svg class="icon-svg" viewBox="0 0 24 24">
+                <path
+                  d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H7.5v-3H10V9.69c0-2.47 1.47-3.83 3.72-3.83 1.08 0 2.2.19 2.2.19v2.42h-1.24c-1.22 0-1.6.76-1.6 1.54V12h2.73l-.44 3h-2.29v6.8c4.56-.93 8-4.96 8-9.8z" />
+              </svg>
+            </a>
+
+            <!-- Twitter / X -->
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+              class="flex h-12 w-12 items-center justify-center rounded-full bg-slate-800 text-white transition duration-300 hover:bg-[#1DA1F2] hover:scale-110">
+              <svg class="icon-svg" viewBox="0 0 24 24">
+                <path
+                  d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.05c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z" />
+              </svg>
+            </a>
+
+            <!-- Instagram -->
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              class="flex h-12 w-12 items-center justify-center rounded-full bg-slate-800 text-white transition duration-300 hover:bg-[#E4405F] hover:scale-110">
+              <svg class="icon-svg" viewBox="0 0 24 24">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              </svg>
+            </a>
+
+            <!-- YouTube -->
+            <a
+              href="https://youtube.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+              class="flex h-12 w-12 items-center justify-center rounded-full bg-slate-800 text-white transition duration-300 hover:bg-[#FF0000] hover:scale-110">
+              <svg class="icon-svg" viewBox="0 0 24 24">
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+              </svg>
+            </a>
+
+            <!-- WhatsApp -->
+            <a
+              href="https://wa.me/23278588554"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp"
+              class="flex h-12 w-12 items-center justify-center rounded-full bg-slate-800 text-white transition duration-300 hover:bg-[#25D366] hover:scale-110">
+              <svg class="icon-svg" viewBox="0 0 24 24">
+                <path
+                  d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984 0 1.758.459 3.474 1.33 4.982l-1.413 5.161 5.283-1.385a9.923 9.923 0 0 0 4.787 1.23h.005c5.507 0 9.99-4.478 9.99-9.985 0-2.667-1.037-5.176-2.922-7.062a9.919 9.919 0 0 0-7.06-2.934zm.005 2c2.133 0 4.14.83 5.646 2.336A7.94 7.94 0 0 1 20 11.984c0 4.411-3.589 8-8 8a7.935 7.935 0 0 1-4.043-1.107l-.29-.172-3.003.787.801-2.927-.189-.3a7.95 7.95 0 0 1-1.264-4.281c0-4.411 3.589-8 8-8z" />
+              </svg>
+            </a>
+
+            <!-- TikTok -->
+            <a
+              href="https://tiktok.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="TikTok"
+              class="flex h-12 w-12 items-center justify-center rounded-full bg-slate-800 text-white transition duration-300 hover:bg-black hover:scale-110">
+              <svg class="icon-svg" viewBox="0 0 24 24">
+                <path
+                  d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.82.56-1.31 1.52-1.31 2.52.01 1.14.65 2.18 1.68 2.66 1.02.48 2.27.35 3.16-.32.78-.58 1.22-1.53 1.23-2.51.02-5.32.01-10.64.01-15.96z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 py-8 text-center text-sm text-slate-400">
+      <div class="mx-auto max-w-7xl px-6">
+        <p>&copy; Mohamed Babatunde. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+      const menuButton = document.getElementById("menuButton");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      menuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Close mobile menu on link click
+      const mobileLinks = mobileMenu.querySelectorAll("a");
+      mobileLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+        });
+      });
+    </script>
+  </body>
+</html>
